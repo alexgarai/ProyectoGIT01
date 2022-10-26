@@ -49,12 +49,14 @@ public class Triangulo extends Figura2D {
 		return (lado*2)+base;
 		
 	}
-	public void mostrarFigura(){
-		
-		System.out.println("El nombre del triangulo es:"+this.getNombre()+" y de color:"+this.getColor());
-		System.out.println("Medidas del triangulo son altura: "+altura+" y base: "+base);
-	}
+
 	
+	
+	@Override
+	public String toString() {
+		return "Triangulo [base=" + base + ", altura=" + altura + "]";
+	}
+
 	public void borrar(){
 		super.borrar();
 		this.altura=this.base=0;
