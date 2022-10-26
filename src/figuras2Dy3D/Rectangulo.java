@@ -57,10 +57,7 @@ public class Rectangulo extends Figura2D {
 		System.out.println("La diagonal es:"+this.calcularDiagonal());
 	}
 	
-	public void borrar(){
-		super.borrar();
-		lado1=lado2=0;
-	}
+
 	public double calcularDiagonal(){
 		return Math.sqrt(Math.pow(lado1,2)+Math.pow(lado2,2));
 	}
