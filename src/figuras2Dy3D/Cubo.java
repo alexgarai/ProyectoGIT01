@@ -61,7 +61,7 @@ public class Cubo extends Figura3D {
 	@Override
 	public double calcularVolumen() {
 		// TODO Auto-generated method stub
-		return alto*ancho*fondo;
+		return alto*ancho;
 	}
 
 }
