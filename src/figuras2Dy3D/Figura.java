@@ -20,10 +20,12 @@ public class Figura {
 		this.color = color;
 	}
 	
-	public void mostrarFigura(){
-		System.out.println("El nombre de la figura es: "+nombre+" y el color: "+color);
+
+	@Override
+	public String toString() {
+		return "Figura [nombre=" + nombre + ", color=" + color + "]";
 	}
-	
+
 	public void borrar(){
 		this.nombre="";
 		this.color="";
